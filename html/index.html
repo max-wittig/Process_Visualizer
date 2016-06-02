@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="../js/libs/moment.js"></script>
+<script src="../js/libs/Gantt-Chart-master/lib/d3/d3.v3.min.js"></script>
+<script src="../js/libs/Gantt-Chart-master/gantt-chart-d3.js"></script>
+<script src="../js/process_json_parser.js"></script>
+<script src="../js/visualizer.js"></script>
+<script src="../js/index.js"></script>
 </head>
 <body>
 
+<div id="chart"></div>
+<button id="load_file_button">Import</button>
+<input type="file" id="file_dialog" style="visibility: hidden"/>
 </body>
 </html>
