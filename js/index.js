@@ -29,7 +29,7 @@ $(document).ready(function ()
         $('#file_dialog').click()
 
     })
-
+ 
     $('#file_dialog').change(function ()
     {
         // Create a reader object
