@@ -39,6 +39,7 @@ $(document).ready(function ()
             var textFile = this.files[0];
             // Read the file
             reader.readAsText(textFile);
+            alert("hi")
             // When it's loaded, process it
             $(reader).on('load', processFile);
         }
