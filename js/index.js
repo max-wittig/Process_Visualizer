@@ -21,17 +21,28 @@ function processFile(e)
     showGantt()
 }
 
+function remove_old_gantt()
+{
+    let svg = document.getElementsByTagName("svg")
+    console.log(svg)
+    if(svg != null && svg.length > 0)
+    {
+        d3.select("svg").remove();
+    }
+}
+
 $(document).ready(function ()
 {
+    remove_old_gantt()
     showGantt()
     $('#load_file_button').click(function ()
     {
         $('#file_dialog').click()
-
     })
 
     $('#file_dialog').change(function ()
     {
+        remove_old_gantt()
         // Create a reader object
         var reader = new FileReader();
         if (this.files.length)

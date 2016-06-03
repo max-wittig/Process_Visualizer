@@ -13,7 +13,7 @@ d3.gantt = function() {
 	bottom : 20,
 	left : 150
     };
-    var selector = 'div';
+    var selector = 'body';
     var timeDomainStart = d3.time.day.offset(new Date(),-3);
     var timeDomainEnd = d3.time.hour.offset(new Date(),+3);
     var timeDomainMode = FIT_TIME_DOMAIN_MODE;// fixed or fit
