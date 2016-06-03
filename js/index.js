@@ -15,7 +15,6 @@ function showGantt()
 
 function processFile(e)
 {
-
     var file = e.target.result,results
     localStorage.setItem("file", file)
     showGantt()
