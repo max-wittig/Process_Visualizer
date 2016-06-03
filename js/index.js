@@ -10,7 +10,7 @@ function showGantt()
             visualizer.build_task_array()
             visualizer.show()
         }
-    }
+    } 
 }
 
 function processFile(e)
